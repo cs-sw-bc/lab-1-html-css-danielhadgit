@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact - LTX Performance</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="LTXTRANSPARENT.png" type="image/png">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><a href="index.html" class="logo-link" aria-label="LTX Performance home"><img src="LTXTRANSPARENT.png" alt="LTX" class="brand-logo"><span class="site-title">LTX Performance</span></a></div>
+        <button class="nav-toggle" aria-label="Open navigation"><span></span></button>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="about.html">About</a>
+            <a href="contact.html" class="active">Contact</a>
+        </div>
+    </nav>
+
+    <header class="hero compact">
+        <div class="hero-content">
+            <h1>Contact Us</h1>
+            <p>Get in touch with our team of experts</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="featured">
+            <h2>Contact Information</h2>
+            <div class="category-grid">
+                <div class="category-card fade-in">
+                    <div class="card-content">
+                        <h3>Sales Department</h3>
+                        <p>Email: sales@ltxperformance.com<br>Phone: (555) 123-4567</p>
+                    </div>
+                </div>
+                <div class="category-card fade-in">
+                    <div class="card-content">
+                        <h3>Technical Support</h3>
+                        <p>Email: support@ltxperformance.com<br>Phone: (555) 123-4568</p>
+                    </div>
+                </div>
+                <div class="category-card fade-in">
+                    <div class="card-content">
+                        <h3>Business Hours</h3>
+                        <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form-section">
+            <h2>Send Us a Message</h2>
+            <form class="contact-form" action="https://formspree.io/f/manpaleq" method="POST" novalidate>
+                <!-- Honeypot field: keep visually hidden to humans, bots may fill it -->
+                <div class="form-row honeypot" aria-hidden="true">
+                    <label for="_gotcha">Leave this field empty</label>
+                    <input id="_gotcha" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
+                </div>
+
+                <div class="form-row">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" required aria-required="true" aria-describedby="name-hint">
+                    <small id="name-hint" class="hint">Your full name helps us address you personally.</small>
+                </div>
+                <div class="form-row">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" required aria-required="true" aria-describedby="email-hint">
+                    <small id="email-hint" class="hint">We will only use this to reply to your inquiry.</small>
+                </div>
+                <div class="form-row">
+                    <label for="subject">Subject</label>
+                    <input id="subject" name="subject" type="text" aria-describedby="subject-hint">
+                    <small id="subject-hint" class="hint">Short summary of your request (optional).</small>
+                </div>
+                <div class="form-row">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" required aria-required="true" aria-describedby="message-hint"></textarea>
+                    <small id="message-hint" class="hint">Please include details about your vehicle and goals.</small>
+                </div>
+
+                <div class="form-row">
+                    <div id="form-status" role="status" aria-live="polite"></div>
+                    <button class="cta-button" type="submit">Send Message</button>
+                </div>
+            </form>
+        </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 LTX Performance. All rights reserved.</p>
+    </footer>
+    <script src="scroll-appear.js"></script>
+    <script src="nav-toggle.js"></script>
+    <script src="contact-form.js"></script>
+</body>
+</html>
